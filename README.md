@@ -66,21 +66,6 @@ self.edge_threshold_high = 150  # Canny边缘检测高阈值
 - 形态学操作优化结果
 - 有效抑制干扰因素
 
-### 数学模型
-详见 `mathematical_model.md` 文件
-
-## 文件结构
-```
-shumo2/
-├── fracture_detection_system.py  # 主程序
-├── run_detection.py             # 运行脚本
-├── requirements.txt             # 依赖包
-├── README.md                   # 项目说明
-├── mathematical_model.md       # 数学模型
-├── 使用说明.md                 # 本文件
-└── output/                     # 输出目录
-    ├── binary_*.jpg           # 二值化结果
-    └── debug_*.jpg            # 调试图像
 ```
 
 ## 联系支持
