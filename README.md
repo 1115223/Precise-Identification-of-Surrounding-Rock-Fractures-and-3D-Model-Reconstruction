@@ -1,19 +1,10 @@
 # Precise-Identification-of-Surrounding-Rock-Fractures-and-3D-Model-Reconstruction
 As the primary source of my country's energy supply, the safe and efficient extraction of coal relies heavily on the precise identification of fractures in the surrounding rock of mine roadways.
-### 1. 安装依赖
+### 安装依赖
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. 运行检测
-```bash
-python run_detection.py
-```
-
-或者直接运行主程序：
-```bash
-python fracture_detection_system.py
-```
 
 ## 系统功能
 
@@ -27,13 +18,7 @@ python fracture_detection_system.py
 - `binary_*.jpg`: 二值化结果图像
 - `debug_*.jpg`: 调试可视化图像（包含各处理步骤）
 
-## 参数调整
-
-### 关键参数位置
-在 `fracture_detection_system.py` 的 `__init__` 方法中：
-
-```python
-# 裂隙识别关键参数
+## 裂隙识别关键参数
 self.min_fracture_width = 1.0  # 最小裂隙宽度(mm)
 self.pixel_to_mm_ratio = 0.1   # 像素到毫米的转换比例
 self.gaussian_kernel_size = 5   # 高斯滤波核大小
